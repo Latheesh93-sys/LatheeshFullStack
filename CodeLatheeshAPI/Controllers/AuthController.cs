@@ -1,7 +1,11 @@
 ﻿using CodeLatheeshAPI.Models.DomainModels;
+using CodeLatheeshAPI.Models.DTO;
+using CodeLatheeshAPI.Services;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -12,45 +16,48 @@ namespace CodeLatheeshAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IConfiguration _config;
 
-        public AuthController(IConfiguration config)
+        public IAuthService _authService;
+        public AuthController(IAuthService authService)
         {
-            _config = config;
+            _authService = authService;
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginModel login)
+        public async Task<IActionResult> Login([FromBody] login loginUser)
         {
-            // Dummy user validation
-            if (login.Username == "admin" && login.Password == "password")
+            var passwordHasher = new PasswordHasher<login>();
+            var user = await _authService.GetUser(loginUser);
+            var verify = passwordHasher.VerifyHashedPassword(loginUser, user.Password,loginUser.Password);
+            if (verify==PasswordVerificationResult.Success) 
             {
-                var token = GenerateToken(login.Username);
-                return Ok(new { token });
+                var token = _authService.GenerateToken(loginUser.Username);
+                var UserDetailsDto = new UserDTO
+                {
+                    Username = user.Username,
+                    Token = token,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Email=user.Email,
+                    UserId=user.UserId
+
+                };
+                return Ok(new { UserDetailsDto });
             }
 
             return Unauthorized();
         }
 
-        private string GenerateToken(string username)
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] register register)
         {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var userDetailsDto = await _authService.RegisterUser(register);
 
-            var claims = new[]
-            {
-            new Claim(ClaimTypes.Name, username),
-            new Claim(ClaimTypes.Role, "Admin") // Example Role
-            };
+            return Ok(new { userDetailsDto });
 
-            var token = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
-                claims: claims,
-                expires: DateTime.Now.AddHours(1),
-                signingCredentials: creds);
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            
         }
+
+       
     }
 }

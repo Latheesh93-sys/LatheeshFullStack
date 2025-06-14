@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\repositories\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\repositories\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\middlewares\\errorloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\middlewares\\errorloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|c:\\users\\s\\source\\repos\\codelatheeshapi\\codelatheeshapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{41BE9B50-5821-461C-8165-DBA9FCD0645E}|CodeLatheeshAPI\\CodeLatheeshAPI.csproj|solutionrelative:codelatheeshapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CodeLatheeshAPI\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Services\\AuthService.cs",
+              "RelativeToolTip": "CodeLatheeshAPI\\Services\\AuthService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T10:15:06.96Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -48,84 +49,36 @@
               "RelativeDocumentMoniker": "CodeLatheeshAPI\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "CodeLatheeshAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAwCQAAABUAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAADwvyEAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:14:22.708Z",
+              "WhenOpened": "2025-06-14T10:14:35.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Program.cs",
               "RelativeDocumentMoniker": "CodeLatheeshAPI\\Program.cs",
               "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Program.cs",
               "RelativeToolTip": "CodeLatheeshAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAkAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:11:02.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CodeLatheeshAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CodeLatheeshAPI\\Properties\\launchSettings.json",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABoAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T10:56:32.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "CodeLatheeshAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\appsettings.json",
-              "RelativeToolTip": "CodeLatheeshAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T10:52:38.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAswBYAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:36:54.935Z",
+              "WhenOpened": "2025-06-14T10:13:58.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ErrorLoggingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Middlewares\\ErrorLoggingMiddleware.cs",
-              "RelativeDocumentMoniker": "CodeLatheeshAPI\\Middlewares\\ErrorLoggingMiddleware.cs",
-              "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Middlewares\\ErrorLoggingMiddleware.cs",
-              "RelativeToolTip": "CodeLatheeshAPI\\Middlewares\\ErrorLoggingMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAQwAUAAAATAAAA",
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "CodeLatheeshAPI\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAxwCQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:22:54.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Repositories\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "CodeLatheeshAPI\\Repositories\\Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\S\\source\\repos\\CodeLatheeshAPI\\CodeLatheeshAPI\\Repositories\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "CodeLatheeshAPI\\Repositories\\Repository\\CategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T07:38:49.816Z"
+              "WhenOpened": "2025-06-14T08:43:06.388Z",
+              "EditorCaption": ""
             }
           ]
         }

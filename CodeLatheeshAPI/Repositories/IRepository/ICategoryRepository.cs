@@ -6,7 +6,7 @@ namespace CodeLatheeshAPI.Repositories.IRepository
     {
         Task<Category> CreateAsync(Category category);
 
-        Task<IEnumerable<Category>> GetAllAsync();
+        Task<IEnumerable<Category>> GetAllAsync(int userId);
 
         Task<Category> FindByIdAsync(Guid id);  
 

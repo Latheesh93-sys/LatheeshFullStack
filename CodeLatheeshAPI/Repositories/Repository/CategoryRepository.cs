@@ -35,10 +35,10 @@ namespace CodeLatheeshAPI.Repositories.Repository
         {
             return await dbContext.Categories.FirstAsync(c => c.Id == id);
         }
-
-        public async Task<IEnumerable<Category>> GetAllAsync()
+         
+        public async Task<IEnumerable<Category>> GetAllAsync(int userId)
         {
-           return await dbContext.Categories.ToListAsync();
+           return await dbContext.Categories.Where(c => c.UserId == userId).ToListAsync();
         }
 
         public async Task<Category?> UpdateCategoryById(Category category)
