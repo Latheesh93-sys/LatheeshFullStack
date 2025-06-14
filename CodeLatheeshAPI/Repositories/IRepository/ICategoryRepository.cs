@@ -13,5 +13,7 @@ namespace CodeLatheeshAPI.Repositories.IRepository
         Task<Category?> UpdateCategoryById(Category category);
 
         Task<Category?> DeleteAsync(Guid id);
+
+        Task<UserSummary> GetUserSummaryAsync(int userId);
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeLatheeshAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9292b7414fff2e879f80ac26dd1923b03a44c5a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdbf0194710ab5a214f8e8e0db75438e548f4ced")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeLatheeshAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeLatheeshAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

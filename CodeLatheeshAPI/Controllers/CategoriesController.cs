@@ -148,6 +148,13 @@ namespace CodeLatheeshAPI.Controllers
             return Ok(response);
         }
 
+        [HttpGet("usersummary/{userId}")]
+        public async Task<IActionResult> GetUserSummary([FromRoute] int userId)
+        {
+            var response = await _categoryService.GetUserSummary(userId);
+            return Ok(response);
+        }
+
         [HttpGet("test-error")]
         public IActionResult TestError()
         {

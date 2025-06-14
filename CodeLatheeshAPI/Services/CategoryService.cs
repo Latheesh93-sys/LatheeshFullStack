@@ -49,5 +49,10 @@ namespace CodeLatheeshAPI.Services
         {
             return _categoryRepo.DeleteAsync(id);
         }
+
+        public Task<UserSummary> GetUserSummary(int userid)
+        {
+            return _categoryRepo.GetUserSummaryAsync(userid);
+        }
     }
 }
