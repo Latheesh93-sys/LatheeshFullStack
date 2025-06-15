@@ -1,12 +1,11 @@
 ﻿using CodeLatheeshAPI.Models.DomainModels;
+using CodeLatheeshAPI.Models.DTO;
 
 namespace CodeLatheeshAPI.Repositories.IRepository
 {
     public interface ICategoryRepository
     {
         Task<Category> CreateAsync(Category category);
-
-        Task<IEnumerable<Category>> GetAllAsync(int userId);
 
         Task<Category> FindByIdAsync(Guid id);  
 
@@ -15,5 +14,15 @@ namespace CodeLatheeshAPI.Repositories.IRepository
         Task<Category?> DeleteAsync(Guid id);
 
         Task<UserSummary> GetUserSummaryAsync(int userId);
+
+        Task<PaginatedResult<Category>> GetFilteredAsync(
+        int userId,
+        int month,
+        string type,
+        string paymentMethod,
+        string sortBy,
+        string sortOrder,
+        int pageNumber = 1,
+        int pageSize = 10);
     }
 }

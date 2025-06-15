@@ -36,11 +36,77 @@ namespace CodeLatheeshAPI.Repositories.Repository
         {
             return await dbContext.Categories.FirstAsync(c => c.Id == id);
         }
-         
-        public async Task<IEnumerable<Category>> GetAllAsync(int userId)
+
+        public async Task<PaginatedResult<Category>> GetFilteredAsync(
+        int userId,
+        int month,
+        string type,
+        string paymentMethod,
+        string sortBy,
+        string sortOrder,
+        int pageNumber = 1,
+        int pageSize = 10)
         {
-           return await dbContext.Categories.Where(c => c.UserId == userId).ToListAsync();
+            var query = dbContext.Categories.AsQueryable();
+
+            // Filter by user
+            query = query.Where(c => c.UserId == userId);
+
+            // Filter by month (if provided)
+            if (month == 0)
+            {
+                month = DateTime.Now.Month;
+            }
+            query = query.Where(c => c.Date.Month == month);
+            
+
+            // Filter by type (if provided)
+            if (!string.IsNullOrEmpty(type) && type !="All")
+            {
+                query = query.Where(c => c.Type == type);
+            }
+
+            // Filter by payment method (if provided)
+            if (!string.IsNullOrEmpty(paymentMethod) && paymentMethod!="All")
+            {
+                query = query.Where(c => c.PaymentMethod == paymentMethod);
+            }
+
+            // Sorting
+            if (!string.IsNullOrEmpty(sortBy))
+            {
+                switch (sortBy.ToLower())
+                {
+                    case "date":
+                        query = sortOrder == "desc"
+                            ? query.OrderByDescending(c => c.Date)
+                            : query.OrderBy(c => c.Date);
+                        break;
+
+                    case "amount":
+                        query = sortOrder == "desc"
+                            ? query.OrderByDescending(c => c.Amount)
+                            : query.OrderBy(c => c.Amount);
+                        break;
+                }
+            }
+
+            // Total count before pagination
+            var totalCount = await query.CountAsync();
+
+            // Pagination
+            var items = await query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return new PaginatedResult<Category>
+            {
+                Items = items,
+                TotalCount = totalCount
+            };
         }
+
 
         public async Task<Category?> UpdateCategoryById(Category category)
         {
@@ -83,7 +149,8 @@ namespace CodeLatheeshAPI.Repositories.Repository
                 {
                     Id = c.Id,
                     Name = c.Name,
-                    Amount = c.Amount
+                    Amount = c.Amount,
+                    Date = c.Date.ToString("dd-MM-yyyy")
                     // Map other needed properties here
                 })
                 .ToListAsync();

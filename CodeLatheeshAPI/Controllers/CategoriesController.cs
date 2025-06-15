@@ -50,27 +50,6 @@ namespace CodeLatheeshAPI.Controllers
             return Ok(response);
         }
 
-        [HttpGet("{userId}")]
-
-        public async Task<IActionResult> GetAllCategories([FromRoute] int userId)
-        {
-            var categories = await _categoryService.GetAllCategories(userId);
-            var response = new List<CategoryDto>();
-            foreach (var category in categories)
-            {
-                response.Add(new CategoryDto
-                {
-                    Id= category.Id,
-                    Name=category.Name,
-                    UserId = category.UserId,
-                    Amount = category.Amount,
-                    Date = category.Date.ToString("dd-MM-yyyy"),
-                    PaymentMethod = category.PaymentMethod,
-                    Type = category.Type
-                });
-            }
-            return Ok(response);
-        }
 
         [HttpGet]
         [Route("{id:guid}")]
@@ -153,6 +132,21 @@ namespace CodeLatheeshAPI.Controllers
         {
             var response = await _categoryService.GetUserSummary(userId);
             return Ok(response);
+        }
+
+        [HttpGet("filtered")]
+        public async Task<IActionResult> GetFiltered(
+        [FromQuery] int userId,
+        [FromQuery] int month,
+        [FromQuery] string? type,
+        [FromQuery] string? paymentMethod,
+        [FromQuery] string? sortBy,
+        [FromQuery] string? sortOrder,
+        [FromQuery] int pageNumber = 1,
+        [FromQuery] int pageSize = 10)
+        {
+            var result = await _categoryService.GetFilteredAsync(userId, month, type, paymentMethod, sortBy, sortOrder, pageNumber, pageSize);
+            return Ok(result);
         }
 
         [HttpGet("test-error")]

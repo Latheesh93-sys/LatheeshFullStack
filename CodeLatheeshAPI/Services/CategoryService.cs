@@ -1,4 +1,5 @@
 ﻿using CodeLatheeshAPI.Models.DomainModels;
+using CodeLatheeshAPI.Models.DTO;
 using CodeLatheeshAPI.Repositories.IRepository;
 using Serilog;
 
@@ -30,11 +31,6 @@ namespace CodeLatheeshAPI.Services
             }
         }
 
-        public Task<IEnumerable<Category>> GetAllCategories(int userId)
-        {
-            return _categoryRepo.GetAllAsync(userId);
-        }
-
         public Task<Category> FindCategory(Guid id)
         {
             return _categoryRepo.FindByIdAsync(id);
@@ -53,6 +49,19 @@ namespace CodeLatheeshAPI.Services
         public Task<UserSummary> GetUserSummary(int userid)
         {
             return _categoryRepo.GetUserSummaryAsync(userid);
+        }
+
+        public Task<PaginatedResult<Category>> GetFilteredAsync(
+        int userId,
+        int month,
+        string type,
+        string paymentMethod,
+        string sortBy,
+        string sortOrder,
+        int pageNumber = 1,
+        int pageSize = 10)
+        {
+            return _categoryRepo.GetFilteredAsync(userId,month,type,paymentMethod,sortBy,sortOrder,pageNumber,pageSize);
         }
     }
 }
