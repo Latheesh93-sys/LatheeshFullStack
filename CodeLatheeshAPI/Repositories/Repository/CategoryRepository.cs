@@ -120,29 +120,29 @@ namespace CodeLatheeshAPI.Repositories.Repository
             return null;
         }
 
-        public async Task<UserSummary> GetUserSummaryAsync(int userId)
+        public async Task<UserSummary> GetUserSummaryAsync(int userId, int selectedmonth)
         {
             var now = DateTime.Now;
 
             // Query total income, expense, and investment for the current user (and optionally current month)
             var totalIncome = await dbContext.Categories
                 .Where(c => c.UserId == userId && c.Type == "Income" && c.Date.Year == now.Year
-                && c.Date.Month == now.Month)
+                && c.Date.Month == selectedmonth)
                 .SumAsync(c => (decimal?)c.Amount) ?? 0;
 
             var totalExpense = await dbContext.Categories
                 .Where(c => c.UserId == userId && c.Type == "Expense" && c.Date.Year == now.Year
-                && c.Date.Month == now.Month)
+                && c.Date.Month == selectedmonth)
                 .SumAsync(c => (decimal?)c.Amount) ?? 0;
 
             var totalInvestment = await dbContext.Categories
                 .Where(c => c.UserId == userId && c.Type == "Investment" && c.Date.Year == now.Year 
-                && c.Date.Month == now.Month)
+                && c.Date.Month == selectedmonth)
                 .SumAsync(c => (decimal?)c.Amount) ?? 0;
 
             // Get top expenses ordered by amount descending, take top 5 (or any count you want)
             var topExpenses = await dbContext.Categories
-                .Where(c => c.UserId == userId && c.Type == "Expense" && c.Date.Year == now.Year && c.Date.Month == now.Month)
+                .Where(c => c.UserId == userId && c.Type == "Expense" && c.Date.Year == now.Year && c.Date.Month == selectedmonth)
                 .OrderByDescending(c => c.Amount)
                 .Take(5)
                 .Select(c => new CategoryDto

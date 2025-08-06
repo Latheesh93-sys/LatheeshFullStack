@@ -13,7 +13,7 @@ namespace CodeLatheeshAPI.Repositories.IRepository
 
         Task<Category?> DeleteAsync(Guid id);
 
-        Task<UserSummary> GetUserSummaryAsync(int userId);
+        Task<UserSummary> GetUserSummaryAsync(int userId,int selectedmonth);
 
         Task<PaginatedResult<Category>> GetFilteredAsync(
         int userId,

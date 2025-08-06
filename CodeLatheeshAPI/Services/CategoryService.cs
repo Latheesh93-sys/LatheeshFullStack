@@ -46,9 +46,9 @@ namespace CodeLatheeshAPI.Services
             return _categoryRepo.DeleteAsync(id);
         }
 
-        public Task<UserSummary> GetUserSummary(int userid)
+        public Task<UserSummary> GetUserSummary(int userid, int selectedmonth)
         {
-            return _categoryRepo.GetUserSummaryAsync(userid);
+            return _categoryRepo.GetUserSummaryAsync(userid,selectedmonth);
         }
 
         public Task<PaginatedResult<Category>> GetFilteredAsync(

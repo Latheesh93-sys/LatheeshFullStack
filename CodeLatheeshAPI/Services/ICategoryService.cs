@@ -14,7 +14,7 @@ namespace CodeLatheeshAPI.Services
         Task<Category?> UpdateCategoryById(Category category);
 
         Task<Category?> DeleteCategory(Guid id);
-        Task<UserSummary> GetUserSummary(int userid);
+        Task<UserSummary> GetUserSummary(int userid,int selectedmonth);
 
         Task<PaginatedResult<Category>> GetFilteredAsync(int userId, int month, string type, string paymentMethod, string sortBy, string sortOrder,int pageNumber,int pageSize);
     }

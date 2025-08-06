@@ -127,11 +127,12 @@ namespace CodeLatheeshAPI.Controllers
             return Ok(response);
         }
 
-        [HttpGet("usersummary/{userId}")]
-        public async Task<IActionResult> GetUserSummary([FromRoute] int userId)
+        [HttpGet("usersummary/{userId}/{month}")]
+        public async Task<IActionResult> GetUserSummary([FromRoute] int userId, [FromRoute] int month)
         {
-            var response = await _categoryService.GetUserSummary(userId);
-            return Ok(response);
+            // Your logic here, for example:
+            var summary = await _categoryService.GetUserSummary(userId, month);
+            return Ok(summary);
         }
 
         [HttpGet("filtered")]
