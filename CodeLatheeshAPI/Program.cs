@@ -75,9 +75,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 builder.Services.AddScoped<IAuthRepository,AuthRepository>();
-builder.Services.AddTransient<ICategoryService, CategoryService>();
+builder.Services.AddTransient<ITransactionService, TransactionService>();
 builder.Services.AddTransient<IAuthService, AuthService>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -116,7 +116,6 @@ app.UseCors(options =>
 app.UseAuthorization();
 app.UseMiddleware<ErrorLoggingMiddleware>();
 app.MapControllers();
-
 
 
 

@@ -31,7 +31,7 @@ namespace CodeLatheeshAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Categories",
+                name: "Transactions",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -51,7 +51,7 @@ namespace CodeLatheeshAPI.Migrations
                 name: "BlogPosts");
 
             migrationBuilder.DropTable(
-                name: "Categories");
+                name: "Transactions");
         }
     }
 }

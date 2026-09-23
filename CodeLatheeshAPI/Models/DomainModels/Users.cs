@@ -15,6 +15,6 @@ namespace CodeLatheeshAPI.Models.DomainModels
         public string Email { get; set; }
 
         public bool Is2faEnabled{get; set;}
-        public ICollection<Category> Categories { get; set; } // Navigation property
+        public ICollection<Transaction> Transactions { get; set; } // Navigation property
     }
 }

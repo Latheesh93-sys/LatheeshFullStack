@@ -8,6 +8,8 @@ namespace CodeLatheeshAPI.Models.DomainModels
         public decimal TotalExpense{ get; set; }
         public decimal TotalInvestment { get; set; }
 
-        public List<CategoryDto> TopExpenses { get; set; }
+        public decimal CurrentBalance { get; set; }
+
+        public List<TransactionDto> TopExpenses { get; set; }
     }
 }

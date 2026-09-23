@@ -82,7 +82,7 @@ namespace CodeLatheeshAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Transactions");
                 });
 #pragma warning restore 612, 618
         }

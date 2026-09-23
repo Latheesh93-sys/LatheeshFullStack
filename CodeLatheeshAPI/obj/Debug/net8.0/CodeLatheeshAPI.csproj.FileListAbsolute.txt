@@ -161,11 +161,6 @@ C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\CodeLat
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\CodeLatheeshAPI.sourcelink.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets\msbuild.CodeLatheeshAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.CodeLatheeshAPI.props
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CodeLatheeshAPI.props
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CodeLatheeshAPI.props
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\scopedcss\bundle\CodeLatheeshAPI.styles.css
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\CodeLath.51102CFD.Up2Date
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\CodeLatheeshAPI.dll
@@ -173,8 +168,6 @@ C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\refint\
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\CodeLatheeshAPI.pdb
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\CodeLatheeshAPI.genruntimeconfig.cache
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\ref\CodeLatheeshAPI.dll
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\CodeLatheeshAPI.Tests\obj\CodeLatheeshAPI.Tests.csproj.nuget.dgspec.json
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\CodeLatheeshAPI.Tests\obj\project.assets.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\Castle.Core.dll
@@ -182,3 +175,11 @@ C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\Moq.dll
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\xunit.assert.dll
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\xunit.core.dll
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\xunit.execution.dotnet.dll
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\CodeLatheeshAPI.staticwebassets.endpoints.json
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

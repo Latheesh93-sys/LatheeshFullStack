@@ -8,14 +8,14 @@ namespace CodeLatheeshAPI.Data
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }
-            public DbSet<Category> Categories { get; set; }
+            public DbSet<Transaction> Transactions { get; set; }
             public DbSet<Users> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Category>()
+            modelBuilder.Entity<Transaction>()
                 .HasOne(c => c.User)
-                .WithMany(u => u.Categories)
+                .WithMany(u => u.Transactions)
                 .HasForeignKey(c => c.UserId);
         }
     }

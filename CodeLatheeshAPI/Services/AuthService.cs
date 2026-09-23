@@ -54,7 +54,7 @@ namespace CodeLatheeshAPI.Services
                 FirstName = users.FirstName,
                 LastName = users.LastName,
                 Email = users.Email,
-                Categories = new List<Category>() // optional, can also be null
+                Transactions = new List<Transaction>() // optional, can also be null
             };
             Users userDetails = await _authRepository.CreateAsync(user);
             var UserDetailsDto = new UserDTO

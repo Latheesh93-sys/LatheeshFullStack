@@ -13,45 +13,45 @@ namespace CodeLatheeshAPI.Migrations
         {
             migrationBuilder.RenameColumn(
                 name: "UrlHandle",
-                table: "Categories",
+                table: "Transactions",
                 newName: "Type");
 
             migrationBuilder.AddColumn<decimal>(
                 name: "Amount",
-                table: "Categories",
+                table: "Transactions",
                 type: "decimal(18,2)",
                 nullable: false,
                 defaultValue: 0m);
 
             migrationBuilder.AddColumn<DateTime>(
                 name: "Date",
-                table: "Categories",
+                table: "Transactions",
                 type: "datetime2",
                 nullable: false,
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
             migrationBuilder.AddColumn<string>(
                 name: "PaymentMethod",
-                table: "Categories",
+                table: "Transactions",
                 type: "nvarchar(max)",
                 nullable: false,
                 defaultValue: "");
 
             migrationBuilder.AddColumn<int>(
                 name: "UserId",
-                table: "Categories",
+                table: "Transactions",
                 type: "int",
                 nullable: false,
                 defaultValue: 0);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Categories_UserId",
-                table: "Categories",
+                table: "Transactions",
                 column: "UserId");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Categories_Users_UserId",
-                table: "Categories",
+                table: "Transactions",
                 column: "UserId",
                 principalTable: "Users",
                 principalColumn: "UserId",
@@ -63,31 +63,31 @@ namespace CodeLatheeshAPI.Migrations
         {
             migrationBuilder.DropForeignKey(
                 name: "FK_Categories_Users_UserId",
-                table: "Categories");
+                table: "Transactions");
 
             migrationBuilder.DropIndex(
                 name: "IX_Categories_UserId",
-                table: "Categories");
+                table: "Transactions");
 
             migrationBuilder.DropColumn(
                 name: "Amount",
-                table: "Categories");
+                table: "Transactions");
 
             migrationBuilder.DropColumn(
                 name: "Date",
-                table: "Categories");
+                table: "Transactions");
 
             migrationBuilder.DropColumn(
                 name: "PaymentMethod",
-                table: "Categories");
+                table: "Transactions");
 
             migrationBuilder.DropColumn(
                 name: "UserId",
-                table: "Categories");
+                table: "Transactions");
 
             migrationBuilder.RenameColumn(
                 name: "Type",
-                table: "Categories",
+                table: "Transactions",
                 newName: "UrlHandle");
         }
     }

@@ -5,8 +5,6 @@ C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\C
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\CodeLatheeshAPI.runtimeconfig.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\appsettings.json
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\CodeLatheeshAPI.Tests\obj\CodeLatheeshAPI.Tests.csproj.nuget.dgspec.json
-C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\CodeLatheeshAPI.Tests\obj\project.assets.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\CodeLatheeshAPI.exe
@@ -175,3 +173,4 @@ C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\obj\Debug\net8.0\r
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\obj\Debug\net8.0\CodeLatheeshAPI.Tests.pdb
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\obj\Debug\net8.0\CodeLatheeshAPI.Tests.genruntimeconfig.cache
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\obj\Debug\net8.0\ref\CodeLatheeshAPI.Tests.dll
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI.Tests\bin\Debug\net8.0\CodeLatheeshAPI.staticwebassets.endpoints.json

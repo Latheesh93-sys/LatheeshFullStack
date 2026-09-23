@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "gxS2Cm4asKa5KJHNvBiQPUEZSbJFJbF9yigDrJaqsPc=",
-  "Source": "CodeLatheeshAPI",
-  "BasePath": "_content/CodeLatheeshAPI",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"9QhAReR5s0dfjW3LHnB/o1Rq6ePBrxh/qW0rivDMUgI=","Source":"CodeLatheeshAPI","BasePath":"_content/CodeLatheeshAPI","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

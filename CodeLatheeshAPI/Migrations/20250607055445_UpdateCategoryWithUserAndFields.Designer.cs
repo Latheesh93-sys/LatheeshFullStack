@@ -97,7 +97,7 @@ namespace CodeLatheeshAPI.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Transactions");
                 });
 
             modelBuilder.Entity("CodeLatheeshAPI.Models.DomainModels.Users", b =>
@@ -136,7 +136,7 @@ namespace CodeLatheeshAPI.Migrations
             modelBuilder.Entity("CodeLatheeshAPI.Models.DomainModels.Category", b =>
                 {
                     b.HasOne("CodeLatheeshAPI.Models.DomainModels.Users", "User")
-                        .WithMany("Categories")
+                        .WithMany("Transactions")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -146,7 +146,7 @@ namespace CodeLatheeshAPI.Migrations
 
             modelBuilder.Entity("CodeLatheeshAPI.Models.DomainModels.Users", b =>
                 {
-                    b.Navigation("Categories");
+                    b.Navigation("Transactions");
                 });
 #pragma warning restore 612, 618
         }
