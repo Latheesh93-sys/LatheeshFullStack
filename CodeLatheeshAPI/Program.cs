@@ -81,28 +81,28 @@ builder.Services.AddTransient<ITransactionService, TransactionService>();
 builder.Services.AddTransient<IAuthService, AuthService>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-var columnOptions = new Serilog.Sinks.MSSqlServer.ColumnOptions();
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Debug()
-    .WriteTo.MSSqlServer(
-        connectionString: connectionString,
-        sinkOptions: new MSSqlServerSinkOptions
-        {
-            TableName = "Logs",
-            AutoCreateSqlTable = true
-        },
-        columnOptions: columnOptions
-    )
-    .CreateLogger();
+//var columnOptions = new Serilog.Sinks.MSSqlServer.ColumnOptions();
+//Log.Logger = new LoggerConfiguration()
+//    .MinimumLevel.Debug()
+//    .WriteTo.MSSqlServer(
+//        connectionString: connectionString,
+//        sinkOptions: new MSSqlServerSinkOptions
+//        {
+//            TableName = "Logs",
+//            AutoCreateSqlTable = true
+//        },
+//        columnOptions: columnOptions
+//    )
+//    .CreateLogger();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 
@@ -112,7 +112,7 @@ app.UseCors(options =>
     options.AllowAnyOrigin();
     options.AllowAnyMethod();
 });
-
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseMiddleware<ErrorLoggingMiddleware>();
 app.MapControllers();

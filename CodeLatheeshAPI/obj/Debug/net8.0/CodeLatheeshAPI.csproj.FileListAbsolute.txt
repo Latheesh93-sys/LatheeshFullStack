@@ -183,3 +183,4 @@ C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\rjsmcsh
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\S\source\repos\CodeLatheeshAPI\CodeLatheeshAPI\bin\Debug\net8.0\appsettings.Product.json
