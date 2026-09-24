@@ -124,7 +124,7 @@ namespace CodeLatheeshAPI.Repositories.Repository
         {
             var now = DateTime.Now;
 
-            // Query total income, expense, and investment for the current user (and optionally current month)
+            // Query income this month, expense,investment and current balance for the current user (and optionally current month)
             var totalIncome = await dbContext.Transactions
                 .Where(c => c.UserId == userId && c.Type == "Income" && c.Date.Year == now.Year
                 && c.Date.Month == selectedmonth)
