@@ -95,6 +95,10 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 //    )
 //    .CreateLogger();
 
+Console.WriteLine("=== CONFIG CHECK ===");
+Console.WriteLine($"Connection string exists: {!string.IsNullOrEmpty(cs)}");
+Console.WriteLine($"JWT Key exists: {!string.IsNullOrEmpty(builder.Configuration["Jwt:Key"])}");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
