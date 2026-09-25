@@ -23,9 +23,6 @@ jobs:
         with:
           dotnet-version: '8.x'
 
-      - name: Clean
-        run: dotnet clean CodeLatheeshAPI/CodeLatheeshAPI.csproj
-
       - name: Build API Project
         run: dotnet build CodeLatheeshAPI/CodeLatheeshAPI.csproj --configuration Release
 
