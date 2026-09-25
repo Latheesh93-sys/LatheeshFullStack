@@ -95,6 +95,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 //    )
 //    .CreateLogger();
 
+var cs = builder.Configuration.GetConnectionString("DefaultConnection");
 Console.WriteLine("=== CONFIG CHECK ===");
 Console.WriteLine($"Connection string exists: {!string.IsNullOrEmpty(cs)}");
 Console.WriteLine($"JWT Key exists: {!string.IsNullOrEmpty(builder.Configuration["Jwt:Key"])}");
